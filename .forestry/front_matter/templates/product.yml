@@ -1,4 +1,24 @@
 ---
 label: product
 hide_body: true
-fields: []
+fields:
+- name: product_name
+  type: text
+  config:
+    required: true
+  label: Product name
+  description: name of product
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+- name: product_picture
+  type: file
+  config:
+    maxSize: 250
+  label: product picture
